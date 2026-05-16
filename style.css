@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+
+* {
+    @apply m-0 p-0 box-border;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+}
+
+
+/* ========== NAVBAR ===== */
+
+#nav-bar {
+    @apply flex justify-between items-center p-[20px] border-b; 
+}
+
+.logo {
+    @apply flex gap-[20px];
+}
+
+.logo a{
+    @apply font-bold;
+}
+
+/* Navigation */
+
+.nav-list {
+    @apply hidden;
+}
+
+.sign-up{
+    @apply px-[16px] py-[9.5px] bg-[#125CED] rounded-xl font-bold;
+}
+
+.sign-up p{
+    @apply text-white;
+}
+
+/* ========== HERO ========== */
+
+.hero-content {
+    @apply p-[20px];
+}
+
+.hero-section {
+    @apply relative overflow-hidden rounded-[20px] p-[20px];
+}
+
+.hero-section img {
+    @apply w-full h-[50vh] object-cover rounded-[20px] brightness-70;
+}
+
+/* Hero Text */
+
+.hero-text{
+    @apply absolute top-1/2 left-[24px] right-[24px] -translate-y-1/2 z-[2] text-center px-[16px];
+}
+
+.hero-text h1{
+    @apply mb-[20px] text-[24px] font-black text-white;
+}
+
+.hero-text p{
+    @apply text-[16px] text-white;
+}
+
+.button {
+    @apply  mt-[20px] bg-[#125CED]  px-[20px] py-[12px] rounded-xl;
+}
+
+.button p{
+    @apply text-white font-bold text-[16px];
+}
+
+/* Why */
+
+.why-section{
+    @apply px-[20px] py-[20px];
+}
+
+.why-section h2{
+    @apply text-[28px] mb-[20px] font-black;
+}
+
+.why-section p{
+    @apply pb-[20px];
+}
+
+.why-container {
+    @apply flex flex-row gap-[20px] overflow-x-auto;
+}
+
+.why-container::-webkit-scrollbar{
+    @apply hidden;
+}
+
+.why-card {
+    @apply shrink-0 flex flex-col gap-[16px] w-[301px] border p-[16px] rounded-[8px] items-start;
+}
+
+.why-card img {
+    @apply h-[24px];
+}
+
+.card-text {
+    @apply flex flex-col gap-[8px];
+}
+
+.card-text h3 {
+    @apply font-bold text-[20px];
+}
+
+.card-text p{
+    @apply text-[#4D6699] text-[14px] font-normal;
+}
+
+/* Feature */
+
+.feature-section{
+    @apply px-[20px] py-[20px];
+}
+
+.feature-section h2{
+    @apply text-[28px] mb-[40px] font-black;
+}
+
+.feature-container {
+    @apply flex flex-row gap-[20px] overflow-x-auto;
+}
+
+.feature-container::-webkit-scrollbar{
+    @apply hidden;
+}
+
+.feature-card{
+    @apply shrink-0 flex flex-col gap-[16px] w-[301px];
+}
+
+.feature-text {
+    @apply flex flex-col gap-[8px];
+}
+
+.feature-text h3{
+    @apply font-bold text-[20px];
+}
+
+.feature-text p{
+    @apply text-[#4D6699] text-[14px] font-normal;
+}
+
+/* view section */
+
+.view-section {
+    @apply flex justify-center px-[20px] py-[20px];
+}
+
+.view-button {
+    @apply px-[16px] py-[9.5px] bg-[#E8EBF2] rounded-xl;
+}
+
+.view-button p{
+    @apply font-bold
+}
+
+/* ========== FOOTER ========== */
+
+.footer{
+    @apply flex flex-col px-[40px] gap-[24px];
+}
+
+.footer-list {
+    @apply flex justify-between items-center text-center;
+}
+
+.footer-text{
+    @apply w-[200px] text-[12px] text-[#4D6699];
+}
+
+.footer p{
+    @apply flex justify-center text-[12px] text-[#4D6699];
+}
+
+@media (min-width: 768px) {
+    #nav-bar{
+        @apply px-[24px] py-[40px];
+    }
+
+    .nav-list{
+        @apply flex items-center gap-[32px] list-none ml-auto mr-[32px];
+    }
+
+    .hero-content {
+        @apply px-[20vh];
+    }
+
+    .hero-section img{
+        @apply h-[70vh];
+    }
+
+    .hero-text h1{
+        @apply text-[48px];
+    }
+
+    .nav-list a{
+        @apply font-medium;
+    }
+
+    .why-container{
+        @apply grid grid-cols-3 gap-[20px];
+    }
+
+    .why-card{
+        @apply w-full;
+    }
+
+    .feature-container{
+        @apply grid grid-cols-3 gap-[20px];
+    }
+
+    .feature-card{
+        @apply w-full;
+    }
+
+    .footer{
+        @apply px-[30vh];
+    }
+    
+    .footer-text{
+        @apply text-[16px];
+    }
+
+    .footer p{
+        @apply text-[16px];
+    }
+}
