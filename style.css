@@ -14,11 +14,13 @@ body {
 /* ========== NAVBAR ===== */
 
 #nav-bar {
-    @apply flex justify-between items-center p-[20px] border-b; 
+    @apply flex justify-between items-center px-[20px] py-[10px] border-b; 
 }
 
 .logo {
-    @apply flex gap-[20px];
+    @ap
+    
+ply flex gap-[20px];
 }
 
 .logo a{
@@ -56,7 +58,7 @@ body {
 /* Hero Text */
 
 .hero-text{
-    @apply absolute top-1/2 left-[24px] right-[24px] -translate-y-1/2 z-[2] text-center px-[16px];
+    @apply absolute top-1/2 left-[24px] right-[24px] -translate-y-1/2 z-[2] text-center p-[16px];
 }
 
 .hero-text h1{
@@ -185,7 +187,7 @@ body {
 
 @media (min-width: 768px) {
     #nav-bar{
-        @apply px-[24px] py-[40px];
+        @apply px-[24px] py-[10px];
     }
 
     .nav-list{

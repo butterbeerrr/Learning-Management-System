@@ -186,7 +186,8 @@ body {
   justify-content: space-between;
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
-  padding: 20px;
+  padding-inline: 20px;
+  padding-block: 10px;
 }
 .logo {
   display: flex;
@@ -235,7 +236,7 @@ body {
   z-index: 2;
   --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
   translate: var(--tw-translate-x) var(--tw-translate-y);
-  padding-inline: 16px;
+  padding: 16px;
   text-align: center;
 }
 .hero-text h1 {
@@ -399,7 +400,7 @@ body {
 @media (min-width: 768px) {
   #nav-bar {
     padding-inline: 24px;
-    padding-block: 40px;
+    padding-block: 10px;
   }
   .nav-list {
     margin-right: 32px;
